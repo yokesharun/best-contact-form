@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UIkit - Best Contact Form</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+     <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+	<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+    	<h3 class="uk-card-title">Contact Us</h3>
+		<hr>
+		<form class="uk-grid uk-animation-toggle">
+		    <div class="uk-width-1-2@s">
+		        <input class="uk-input" type="text" placeholder="Your First Name">
+		    </div>
+		    <div class="uk-width-1-2@s">
+		        <input class="uk-input" type="text" placeholder="Your Last Name">
+		    </div>
+		     <div class="uk-width-1-2@s">
+		        <input class="uk-input" type="text" placeholder="Your Contact Number">
+		    </div>
+		    <div class="uk-width-1-2@s">
+		        <input class="uk-input" type="text" placeholder="Your Email">
+		    </div>
+		    <div class="uk-width-1-2@s">
+		        <div class="uk-margin">
+		            <select class="uk-select">
+		                <option value="general">General</option>
+					    <option value="support">Support</option>
+					    <option value="sales">Sales</option>
+		            </select>
+		        </div>
+		    </div>
+		    <div class="uk-margin uk-grid-small uk-child-width-auto uk-width-1-2@s" uk-grid>
+	            <label><input class="uk-radio" type="radio" name="radio2" checked> Male</label>
+	            <label><input class="uk-radio" type="radio" name="radio2"> Female</label>
+	            <label><input class="uk-radio" type="radio" name="radio2"> Others</label>
+	        </div>
+		     <div class="uk-width-1-1">
+		        <textarea class="uk-textarea" placeholder="Your Message"></textarea>
+		    </div>
+
+		    <div class="uk-width-1-1">
+				<button id="regenerate" class="uk-button uk-button-default">Regenerate</button>
+				<label id="random_number_1"></label>
+				+
+				<label id="random_number_2"></label>
+				=
+				<input type="number" class="uk-input" placeholder="Answer" id="total">
+			</div>
+
+		     <div class="uk-width-1-1">
+		    	<button class="uk-button uk-button-primary" id="submit"> Submit</button>
+		    </div>
+		    
+		</form>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/uikit.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+
+	<script type="text/javascript">
+		
+		UIkit.notification({
+		    message: 'my-message!',
+		    status: 'danger',
+		    pos: 'top-right',
+		    timeout: 5000
+		});
+
+		UIkit.notification({
+		    message: 'my-message!',
+		    status: 'success',
+		    pos: 'top-right',
+		    timeout: 5000
+		});
+
+	</script>
+
+</body>
+</html>

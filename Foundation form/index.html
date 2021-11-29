@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foundation - Best Contact Form</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+     <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <form>
+	  <div class="row callout large contact-form">
+
+	  	<div class="medium-12 columns">
+		  	<div data-alert class="alert-box alert">
+			  This is an alert - alert that is rounded.
+			  <a href="#" class="close">&times;</a>
+			</div>
+
+			<div data-alert class="alert-box success">
+			  This is an alert - alert that is rounded.
+			  <a href="#" class="close">&times;</a>
+			</div>
+		</div>
+
+	    <div class="medium-12 columns">
+	  		<h3>Contact Us Form</h3>
+	  		<hr>
+	  	</div>
+
+	    <div class="medium-6 columns">
+	      <label>First Name
+	        <input type="text" placeholder="Your First Name">
+	      </label>
+	    </div>
+
+	    <div class="medium-6 columns">
+	      <label>Last Name
+	        <input type="text" placeholder="Your Last Name">
+	      </label>
+	    </div>
+
+	    <div class="medium-6 columns">
+	      <label>Contact Number
+	        <input type="text" placeholder="Your Contact Number">
+	      </label>
+	    </div>
+
+	    <div class="medium-6 columns">
+	      <label>Email
+	        <input type="text" placeholder="Your Email">
+	      </label>
+	    </div>
+
+	     <div class="medium-6 columns">
+	      <label>Enquiry For
+	        <select>
+			    <option value="general">General</option>
+			    <option value="support">Support</option>
+			    <option value="sales">Sales</option>
+			</select>
+	      </label>
+	    </div>
+
+	    <div class="medium-6 columns">
+	      <label>Gender
+	      <br>
+	        <input type="radio" checked> Male
+	        <input type="radio"> Female
+	        <input type="radio"> Others
+	      </label>
+	    </div>
+
+	    <div class="medium-12 columns">
+	      <label>Message
+	        <textarea placeholder="Your Message"></textarea>
+	      </label>
+	    </div>
+
+	    <div class="medium-6 columns">
+			<button id="regenerate" class="button primary small">Regenerate</button>
+			<label id="random_number_1"></label>
+			+
+			<label id="random_number_2"></label>
+			=
+			<input type="number" placeholder="Answer" id="total">
+		</div>
+
+	    <div class="medium-12 columns">
+	    	<button class="button primary" id="submit">Submit</button>
+	    </div>
+	  </div>
+	</form>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/foundation.min.js"></script>
+	<script type="text/javascript" src="js/foundation.alert.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript">
+		$(document).foundation('alert');
+	</script>
+</body>
+</html>
