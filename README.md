@@ -1,5 +1,7 @@
 # Best contact form
 
+![GitHub all releases](https://img.shields.io/github/downloads/yokesharun/best-contact-form/total)
+
 Make use of Different contact forms from different CSS frameworks. Boilerplate for contact form
 
 ## CSS Frameworks Used
